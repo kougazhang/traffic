@@ -14,7 +14,7 @@ type Option struct {
 func ParseOption(s string) (opt Option, err error) {
 	split := strings.Split(s, "/")
 	if len(split) != 2 {
-		err = fmt.Errorf("invalid string %s", s)
+		err = fmt.Errorf("traffic: invalid string s %s", s)
 		return
 	}
 	green, _err := strconv.ParseInt(split[0], 10, 64)
