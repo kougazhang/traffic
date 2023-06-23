@@ -19,7 +19,7 @@ func equal(a, b []int) bool {
 }
 
 func TestNewTrafficLight_isGreen(t *testing.T) {
-	light, err := NewTrafficLight(&TrafficLightOption{1, 3})
+	light, err := NewTrafficLight(&Option{1, 3})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -34,7 +34,7 @@ func TestNewTrafficLight_isGreen(t *testing.T) {
 		t.Fatal(green, g1)
 	}
 	// 2
-	light, err = NewTrafficLight(&TrafficLightOption{2, 3})
+	light, err = NewTrafficLight(&Option{2, 3})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -49,7 +49,7 @@ func TestNewTrafficLight_isGreen(t *testing.T) {
 		t.Fatal(green, g1)
 	}
 	// 3
-	light, err = NewTrafficLight(&TrafficLightOption{8, 10})
+	light, err = NewTrafficLight(&Option{8, 10})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -65,7 +65,7 @@ func TestNewTrafficLight_isGreen(t *testing.T) {
 	}
 	// 4
 	fmt.Println("4......")
-	light, err = NewTrafficLight(&TrafficLightOption{1, 2})
+	light, err = NewTrafficLight(&Option{1, 2})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -81,7 +81,7 @@ func TestNewTrafficLight_isGreen(t *testing.T) {
 	}
 	// 5
 	fmt.Println("5......")
-	light, err = NewTrafficLight(&TrafficLightOption{1, 1})
+	light, err = NewTrafficLight(&Option{1, 1})
 	if err != nil {
 		t.Fatal(err)
 	}
